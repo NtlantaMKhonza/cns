@@ -1,0 +1,1 @@
+web : gunicorn CNS.wsgi --log-file -

@@ -1,0 +1,37 @@
+
+  <hr>
+
+
+
+ 
+  <footer class="py-5 bg-dark">
+    <div class="container">
+
+          <!-- Call to action -->
+  <ul class="list-unstyled list-inline text-center py-2">
+   
+    <li class="list-inline-item">
+
+      {% if user.is_authenticated %}
+ 
+      <li><a class="nav-link btn btn-danger btn-rounded" href="{% url 'account_logout' %}"> Logout </a></li>
+      {% else %}
+      <li class="list-inline-item">
+        <h5 class="mb-1 text-white">Register for free</h5>
+      </li>
+      <li><a class="nav-link btn btn-danger btn-rounded" href="{% url 'account_signup' %}"> sign up </a></li>
+
+     <li><a class="nav-link btn btn-primary btn-rounded" href="{% url 'account_login' %}"> Login </a></li> 
+      
+      {% endif %}
+    </li>
+    <li><p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p></li>
+
+  </ul>
+  <!-- Call to action -->
+    </div>
+    <!-- /.container -->
+  </footer>
+
+</footer>
+<!-- Footer -->
